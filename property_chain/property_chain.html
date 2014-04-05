@@ -1,0 +1,30 @@
+<html>
+<body>
+
+
+	<script type="text/javascript">
+		function MyObject1(formalParameter) {
+			this.testNumber = formalParameter;
+			console.log("1 Con Be Constructed")
+		}
+
+		function MyOjbect2(formalParameter) {
+			this.testString = formalParameter;
+			console.lgo("2 Con Be Constructed")
+		}
+
+		MyOjbect2.prototype = new MyObject1(8);
+
+		var objectRef = new MyOjbect2("String_Value")
+
+		objectRef.testNumber = 10;
+
+		console.log(objectRef.testString)
+
+		console.log(objectRef.testNumber)
+
+		console.log(objectRef.toString)
+
+	</script>
+	</body>
+</html>
